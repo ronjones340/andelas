@@ -36,9 +36,9 @@ def days(data):
         impact['dollarsInFlight'] = int(impact['infectionsByRequestedTime'] * 0.65 * 1.5 / data['timeToElapse'])
         severeImpact['dollarsInFlight'] = int(severeImpact['infectionsByRequestedTime'] * 0.65 * 1.5 / data['timeToElapse'])
         result = {
-          "data": data,
-          "impact": impact,
-          "severeImpact": severeImpact,
+          'data': data,
+          'impact': impact,
+          'severeImpact': severeImpact,
         }
         return result
 
@@ -64,8 +64,8 @@ def weeks(data):
         severeImpact['dollarsInFlight'] = format(severeImpact['infectionsByRequestedTime'] * 0.65 * 1.5 * data['timeToElapse']*7)
         result = {
           "Data": data,
-          "Impact": impact,
-          "SevereImpact": severeImpact,
+          "impact": impact,
+          "severeImpact": severeImpact,
         }
         return result
 
@@ -91,8 +91,8 @@ def months(data):
         severeImpact['dollarsInFlight'] = format(severeImpact['infectionsByRequestedTime'] * 0.65 * 1.5 * data['timeToElapse'] * 30)
         print(impact)
         result = {
-          "Data": data,
-          "Impact": impact,
-          "SevereImpact" : severeImpact,
+          'Data': data,
+          'impact': impact,
+          'severeImpact' : severeImpact,
         }
         return result
