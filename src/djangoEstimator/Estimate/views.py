@@ -22,6 +22,3 @@ class Estimates(APIView):
         data = JSONParser().parse(request)
         x = estimator(data)
         return Response(x)
-
-
-        
