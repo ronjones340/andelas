@@ -1,4 +1,4 @@
-from periodtype import (days,weeks,months)
+from periodtype import days,weeks,months
 
 def estimator(data):
     ptype = data["periodType"]
@@ -10,7 +10,7 @@ def estimator(data):
         return results
     else:
         results = months(data)
-    return results
+        return results
 
 
 #estimator(data)

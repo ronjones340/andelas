@@ -40,7 +40,6 @@ def days(data):
           "Impact": impact,
           "SevereImpact": severeImpact,
         }
-        print(result)
         return result
 
 def weeks(data):
