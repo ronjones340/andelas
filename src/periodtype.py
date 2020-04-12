@@ -91,8 +91,8 @@ def months(data):
         severeImpact['dollarsInFlight'] = format(severeImpact['infectionsByRequestedTime'] * 0.65 * 1.5 * data['timeToElapse'] * 30)
         print(impact)
         result = {
-          'Data': data,
-          'impact': impact,
-          'severeImpact' : severeImpact,
+          "data": data,
+          "impact": impact,
+          "severeImpact" : severeImpact
         }
         return result
