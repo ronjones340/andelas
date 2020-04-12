@@ -36,9 +36,9 @@ def days(data):
         impact['dollarsInFlight'] = int(impact['infectionsByRequestedTime'] * 0.65 * 1.5 / data['timeToElapse'])
         severeImpact['dollarsInFlight'] = int(severeImpact['infectionsByRequestedTime'] * 0.65 * 1.5 / data['timeToElapse'])
         result = {
-          "Data": data,
-          "Impact": impact,
-          "SevereImpact": severeImpact,
+          "data": data,
+          "impact": impact,
+          "severeImpact": severeImpact,
         }
         return result
 
