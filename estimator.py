@@ -2,9 +2,9 @@ from periodtype import (days,weeks,months)
 
 def estimator(data):
     ptype = data["periodType"]
-    if (str(ptype) == 'Days'):
+    if (str(ptype) == 'days'):
         x = days(data)
-    elif (str(ptype) == 'Weeks'):
+    elif (str(ptype) == 'weeks'):
         x = weeks(data)
     else:
         x = months(data)
